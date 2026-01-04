@@ -82,7 +82,7 @@ body {
     color: var(--text-invert);
     margin-left: 20px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .header a.active {
