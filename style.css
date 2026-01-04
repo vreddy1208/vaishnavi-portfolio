@@ -34,7 +34,7 @@ h4 {
     margin-bottom: 10px;
 }
 
-:root {
+/* :root {
     --bg-main: #f8fafc;
     --bg-card: #ffffff;
     --bg-header: #0f172a;
@@ -43,11 +43,23 @@ h4 {
     --text-muted: #475569;
     --text-invert: #ffffff;
 
-    --accent: #2563eb;
+    --accent: #f145da;
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+} */
+:root {
+    --bg-main: #f1f5f9;
+    --bg-card: #ffffff38;
+    --bg-header: #0b132b;
+
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --text-invert: #ffffff;
+
+    --accent: #0f766e;
     --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-body.dark {
+/* body.dark {
     --bg-main: #0f172a;
     --bg-card: #020617;
     --bg-header: #020617;
@@ -56,9 +68,22 @@ body.dark {
     --text-muted: #94a3b8;
     --text-invert: #ffffff;
 
-    --accent: #60a5fa;
+    --accent: #3290ce;
     --shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+} */
+body.dark {
+    --bg-main: #020617;
+    --bg-card: #0f454b;
+    --bg-header: #020617;
+
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
+    --text-invert: #ffffff;
+
+    --accent: #38bdf8;
+    --shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
 }
+
 
 body {
     background: var(--bg-main);
@@ -82,7 +107,7 @@ body {
     color: var(--text-invert);
     margin-left: 20px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .header a.active {
@@ -106,8 +131,8 @@ body {
 
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, #eb25c3, #1e40af);
-    background-size: 120% 120%;
+    background: linear-gradient(0deg, #0F766E, #0B132B);
+    background-size: 100% 150%;
     background-position: center;
     display: flex;
     align-items: center;
@@ -276,6 +301,16 @@ body {
     box-shadow: 0 14px 34px rgba(0, 0, 0, 0.15);
 }
 
+.project-card a:hover,
+.featured-project a:hover {
+    color: #e5e7eb;
+}
+
+.project-card a:hover {
+    color: #e5e7eb;
+
+}
+
 .skill-cards,
 .project-grid {
     display: grid;
@@ -295,6 +330,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease;
+    background-color: #0b132b;
 }
 
 .footer.show {
@@ -373,6 +409,7 @@ body {
         text-align: center;
     }
 }
+
 .hero::after {
     content: "⌄";
     position: absolute;
@@ -390,10 +427,12 @@ body {
         opacity: 0;
         transform: translate(-50%, -6px);
     }
+
     50% {
         opacity: 0.8;
         transform: translate(-50%, 0);
     }
+
     100% {
         opacity: 0;
         transform: translate(-50%, 6px);
@@ -661,8 +700,8 @@ body {
 }
 
 .badge.participation {
-    background: rgba(100, 116, 139, 0.12);
-    color: #475569;
+    background: rgba(140, 202, 16, 0.12);
+    color: #ddc613;
 }
 
 .education-card {
@@ -698,7 +737,7 @@ body {
 }
 
 .education-tags span {
-    font-size: 13px;
+    font-size: 15px;
     padding: 6px 12px;
     border-radius: 16px;
     background: rgba(37, 99, 235, 0.08);
